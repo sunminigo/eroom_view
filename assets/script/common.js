@@ -42,6 +42,24 @@ $(document).ready(function(){
 		$('.lnb').removeClass('active');
 		return false;
 	});
+	
+	//popup open
+	$('[data-popup-open]').on('click', function(e)  {
+		var targeted_popup_class = $(this).attr('data-popup-open');
+		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+		e.preventDefault();
+	});
+	//popup close
+	$('[data-popup-close]').on('click', function(e)  {
+		var targeted_popup_class = $(this).attr('data-popup-close');
+		$('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+		e.preventDefault();
+	});
+
+	// 텍스트 사이즈
+	$(".control_text").bind("click", function () {
+		$('body').toggleClass('controlFontSize');
+	});
 
 	//slider
 	$('#visual_slider').slick({
@@ -73,26 +91,6 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		autoplay: false,
 		arrows: false,
-	});
-
-
-
-	//popup open
-	$('[data-popup-open]').on('click', function(e)  {
-		var targeted_popup_class = $(this).attr('data-popup-open');
-		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-		e.preventDefault();
-	});
-	//popup close
-	$('[data-popup-close]').on('click', function(e)  {
-		var targeted_popup_class = $(this).attr('data-popup-close');
-		$('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-		e.preventDefault();
-	});
-
-	// 텍스트 사이즈
-	$(".control_text").bind("click", function () {
-		$('body').toggleClass('controlFontSize');
 	});
 });
 
