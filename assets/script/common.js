@@ -5,7 +5,6 @@ $(document).ready(function(){
 
 	$('.gnb').each(function () {
 		var ref = $(this).children('button').attr('ref');
-		var href = $(this).find('a').attr('href');
 
 		if (urlName.indexOf(ref) != -1) {
 			$(this).addClass('active');
@@ -14,13 +13,11 @@ $(document).ready(function(){
 
 		$(this).on('click', function() {
 			if ($(this).children().hasClass('lnb_wrap')) {
-				console.log('있어')
 				$(this).addClass('active');
 				$(this).find('.lnb_wrap').addClass('active');
 				$('.gnb').not($(this)).removeClass('active').find('.lnb_wrap').removeClass('active');
 				return true;
 			} else {
-				console.log('없어')
 				$('.gnb_wrap').removeClass('active');
 				return false;
 			}
@@ -60,8 +57,7 @@ $(document).ready(function(){
 
 	// 텍스트 사이즈
 	$(".control_text").on("click", function () {
-		console.log('dddddddddd')
-		$('body').toggleClass('controlFontSize');
+		$('html, body').toggleClass('controlFontSize');
 	});
 
 

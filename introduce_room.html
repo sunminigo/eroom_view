@@ -167,25 +167,24 @@
 </section>
 
 	</main>
-	<section class="side_wrap" aria-label="현재 날씨 및 대관일정을 확인할 수 있습니다.">
-	<div class="side_box">
-		<article class="weather_wrap box">
-			<div class="today_info">
-				<p class="today_info__date">2021년 01년 22일</p>
-				<p class="today_info__time">2:53 PM</p>
+	<section class="side_box" aria-label="현재 날씨 및 대관일정을 확인할 수 있습니다.">
+	<article class="weather_wrap box">
+		<div class="today_info">
+			<p class="today_info__date">2021년 01년 22일</p>
+			<p class="today_info__time">2:53 PM</p>
+		</div>
+		<div class="temp_info">
+			<div class="temp_info__img">
+				<img src="./assets/images/weather/weather_01.svg" alt="날씨" />
 			</div>
-			<div class="temp_info">
-				<div class="temp_info__img">
-					<img src="./assets/images/weather/weather_01.svg" alt="날씨" />
-				</div>
-				<div class="temp_info__txt">
-					<p>-5℃</p>
-					<p class="location">서울 영등포구</p>
-				</div>
+			<div class="temp_info__txt">
+				<p>-5℃</p>
+				<p class="location">서울 영등포구</p>
 			</div>
-		</article>
+		</div>
+	</article>
 
-		<article class="info_wrap box">
+	<article class="info_wrap box">
 			<h2 class="title">오늘의 대관현황</h2>
 			<ul class="info_list">
 				<li>
@@ -202,9 +201,8 @@
 			<button type="button"
 			        class="btn_more"
 			        data-popup-open="schedule_detail"
-			><img src="/assets/images/icon/calender.png" alt="" class="m-r-8">일정 전체 보기</button>
+			><img src="./assets/images/icon/calender.png" alt="" class="m-r-8">일정 전체 보기</button>
 		</article>
-	</div>
 </section>
 
 </div>
@@ -576,26 +574,6 @@
 		</div>
 	</div>
 </div>
-
-
-<!--
-<table cellspacing="0" cellpadding="0">
-	<tbody>
-	<tr>
-		<th></th>
-		<td></td>
-	</tr>
-	</tbody>
-</table>
-<table cellspacing="0" cellpadding="0">
-	<tbody>
-	<tr>
-		<th></th>
-		<td></td>
-	</tr>
-	</tbody>
-</table>
--->
 
 <div class="popup_wrap room_detail"
      data-popup="room_detail__nuri"
@@ -1120,7 +1098,7 @@
 							<td>
 								<p>시간당 33,000원</p>
 								<p>20% 할증요금 - 시간당 39,600원</p><br/>
-								<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+								<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1141,7 +1119,7 @@
 							<td>
 								<p>시간당 6,600원</p>
 								<p>20% 할증요금 - 시간당 7,920원</p><br/>
-								<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+								<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1161,7 +1139,7 @@
 							<td>
 								<p>시간당 23,100원</p>
 								<p>20% 할증요금 - 시간당 27,720원</p><br/>
-								<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+								<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1316,7 +1294,7 @@
 							<td>
 								<p>시간당 33,000원</p>
 								<p>20% 할증요금 - 시간당 39,600원</p><br/>
-								<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+								<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1337,7 +1315,7 @@
 							<td>
 								<p>시간당 6,600원</p>
 								<p>20% 할증요금 - 시간당 7,920원</p><br/>
-								<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+								<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1356,7 +1334,7 @@
 							<td>
 								<p>시간당 23,100원</p>
 								<p>20% 할증요금 - 시간당 27,720원</p><br/>
-								<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+								<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1537,7 +1515,7 @@
 							<td>
 								<p>시간당 6,600원</p>
 								<p>20% 할증요금 - 시간당 7,920원</p><br/>
-								<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+								<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1557,7 +1535,7 @@
 						<td>
 							<p>시간당 23,100원</p>
 							<p>20% 할증요금 - 시간당 27,720원</p><br/>
-							<p>(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
+							<p class="text-danger">(18시 이후 야간/토요일 대관시 20% 할증요금 부과)</p>
 						</td>
 					</tr>
 					</tbody>
