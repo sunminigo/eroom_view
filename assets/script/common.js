@@ -42,7 +42,8 @@ $(document).ready(function(){
 		$('.lnb').removeClass('active');
 		return false;
 	});
-	
+
+
 	//popup open
 	$('[data-popup-open]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-open');
@@ -56,10 +57,13 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
+
 	// 텍스트 사이즈
-	$(".control_text").bind("click", function () {
+	$(".control_text").on("click", function () {
+		console.log('dddddddddd')
 		$('body').toggleClass('controlFontSize');
 	});
+
 
 	//slider
 	$('#visual_slider').slick({
@@ -79,18 +83,20 @@ $(document).ready(function(){
 		verticalSwiping: true
 	});
 
-	$(".tabs").slick({
-		asNavFor: '.tab_content',
+	$(".rooms").slick({
 		slidesToShow: 6,
 		autoplay: false,
 		arrows: false,
+		focusOnSelect: true,
+		asNavFor: '.room_view',
 	});
 
-	$(".tab_content").slick({
-		asNavFor: '.tabs',
+	$(".room_view").slick({
+		fade: true,
 		slidesToShow: 1,
 		autoplay: false,
 		arrows: false,
+		asNavFor: '.rooms',
 	});
 });
 
