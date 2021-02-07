@@ -40,7 +40,6 @@ $(document).ready(function(){
 		return false;
 	});
 
-
 	//popup open
 	$('[data-popup-open]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-open');
@@ -54,12 +53,10 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-
 	// 텍스트 사이즈
 	$(".control_text").on("click", function () {
 		$('html, body').toggleClass('controlFontSize');
 	});
-
 
 	//slider
 	$('#visual_slider').slick({
@@ -79,21 +76,21 @@ $(document).ready(function(){
 		verticalSwiping: true
 	});
 
-	$(".rooms").slick({
-		slidesToShow: 6,
-		autoplay: false,
+	$(".room_view").slick({
+		autoplay: true,
+		slidesToShow: 1,
 		arrows: false,
-		focusOnSelect: true,
-		asNavFor: '.room_view',
+		asNavFor: '.rooms'
 	});
 
-	$(".room_view").slick({
-		fade: true,
-		slidesToShow: 1,
-		autoplay: false,
+	$(".rooms").slick({
+		slidesToShow: 6,
 		arrows: false,
-		asNavFor: '.rooms',
+		focusOnSelect: true,
+		asNavFor: '.room_view'
 	});
+
+
 });
 
 var nowZoom = 100;
