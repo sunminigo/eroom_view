@@ -1107,7 +1107,7 @@ body.controlFontSize {
 
 /* line 88, workspace/assets/style/pages/_navigation.scss */
 #lnb_floor.lnb_box > .lnb {
-		width: 102px !important;
+		width: 102px;
 }
 
 /* line 1, workspace/assets/style/pages/_bottomInfo.scss */
