@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 		if (urlName.indexOf(ref) != -1) {
 			$(this).addClass('active');
-			$(this).find('.lnb_wrap').addClass('active')
+			$(this).find('.lnb_wrap').addClass('active');
 		}
 
 		$(this).on('click', function() {
@@ -31,6 +31,7 @@ $(document).ready(function(){
 		}
 		if (urlName.indexOf(href) != -1) {
 			$(this).addClass('active');
+			$('.lnb').not($(this)).removeClass('active');
 		}
 	});
 	$('.btn_back').on('click', function(){
@@ -66,6 +67,7 @@ $(document).ready(function(){
 		dots: true,
 	});
 
+/*
 	$("#info_slider").slick({
 		vertical: true,
 		slidesToShow: 1,
@@ -75,6 +77,7 @@ $(document).ready(function(){
 		arrows: false,
 		verticalSwiping: true
 	});
+*/
 
 	$(".room_view").slick({
 		autoplay: true,
