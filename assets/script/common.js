@@ -26,6 +26,18 @@ $(function() {
 		arrows: false,
 		verticalSwiping: true
 	});
+	$(".room_view").slick({
+		autoplay: false,
+		slidesToShow: 1,
+		arrows: false,
+		asNavFor: '.rooms'
+	});
+	$(".rooms").slick({
+		slidesToShow: 5,
+		arrows: false,
+		focusOnSelect: true,
+		asNavFor: '.room_view'
+	});
 
 	/****************************************
 	 * NAVIGATION
@@ -77,19 +89,9 @@ $(function() {
 		var targeted_popup_class = $(this).attr('data-popup-open');
 
 		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-		$('.card_slider').trigger('resize');
-		$(".room_view").slick({
-			autoplay: false,
-			slidesToShow: 1,
-			arrows: false,
-			asNavFor: '.rooms'
-		});
-		$(".rooms").slick({
-			slidesToShow: 4,
-			arrows: false,
-			focusOnSelect: true,
-			asNavFor: '.room_view'
-		});
+		$('.card_slider').slick('unslick').slick('init');
+		$('.room_view').slick('unslick').slick('init');
+		$('.rooms').slick('unslick').slick('init');
 		$('.zoom_box').addClass('box');
 		$('.control_btn').addClass('box');
 
