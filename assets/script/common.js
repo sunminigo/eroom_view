@@ -1,5 +1,35 @@
-$(document).ready(function(){
-	//navigation
+$(function() {
+	/****************************************
+	 * SLIDER
+	 *****************************************/
+	$('#visual_slider').slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
+		arrows: false,
+		dots: true,
+	});
+	$('.card_slider').slick({
+		rows: 2,
+		autoplay: false,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		autoplaySpeed: 5000,
+		arrows: true,
+		dots: true,
+	});
+	$("#info_slider").slick({
+		vertical: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		arrows: false,
+		verticalSwiping: true
+	});
+
+	/****************************************
+	 * NAVIGATION
+	 *****************************************/
 	var url = window.location.pathname;
 	var urlName = url.replace('/', '').split('.')[0];
 
@@ -8,7 +38,7 @@ $(document).ready(function(){
 
 		if (urlName.indexOf(ref) != -1) {
 			$(this).addClass('active');
-			$(this).find('.lnb_wrap').addClass('active');
+			$(this).find('.lnb_wrap').addClass('active')
 		}
 
 		$(this).on('click', function() {
@@ -31,7 +61,6 @@ $(document).ready(function(){
 		}
 		if (urlName.indexOf(href) != -1) {
 			$(this).addClass('active');
-			$('.lnb').not($(this)).removeClass('active');
 		}
 	});
 	$('.btn_back').on('click', function(){
@@ -41,61 +70,65 @@ $(document).ready(function(){
 		return false;
 	});
 
-	//popup open
+	/****************************************
+	* POPUP OPEN CLOSE
+	*****************************************/
 	$('[data-popup-open]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-open');
+
 		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+		$('.card_slider').trigger('resize');
+		$(".room_view").slick({
+			autoplay: false,
+			slidesToShow: 1,
+			arrows: false,
+			asNavFor: '.rooms'
+		});
+		$(".rooms").slick({
+			slidesToShow: 4,
+			arrows: false,
+			focusOnSelect: true,
+			asNavFor: '.room_view'
+		});
+		$('.zoom_box').addClass('box');
+		$('.control_btn').addClass('box');
+
 		e.preventDefault();
 	});
-	//popup close
 	$('[data-popup-close]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-close');
 		$('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+		$('.zoom_box').removeClass('box');
+		$('.control_btn').removeClass('box');
 		e.preventDefault();
 	});
 
-	// 텍스트 사이즈
+	/****************************************
+	 * TEXT SIZE
+	 *****************************************/
 	$(".control_text").on("click", function () {
 		$('html, body').toggleClass('controlFontSize');
 	});
 
-	//slider
-	$('#visual_slider').slick({
-		autoplay: true,
-		autoplaySpeed: 5000,
-		arrows: false,
-		dots: true,
-	});
+	/****************************************
+	 * RANDOM COLOR
+	let color = ['#127BDC', '#AF1280', '#FFB500', '#7CD800'];
 
-/*
-	$("#info_slider").slick({
-		vertical: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		arrows: false,
-		verticalSwiping: true
-	});
-*/
-
-	$(".room_view").slick({
-		autoplay: true,
-		slidesToShow: 1,
-		arrows: false,
-		asNavFor: '.rooms'
-	});
-
-	$(".rooms").slick({
-		slidesToShow: 6,
-		arrows: false,
-		focusOnSelect: true,
-		asNavFor: '.room_view'
-	});
-
+	for(var i =0;i < $('.randomColor').length;i++){
+		getColor = function(){
+			let result = color[Math.floor(Math.random()*color.length)];
+			return result;
+		}
+		var localObj = getColor();
+		$('.randomColor:eq('+i+')').css('border-left-color', localObj );
+	}
+	 *****************************************/
 
 });
 
+/****************************************
+ * ZOOM IN OUT
+ *****************************************/
 var nowZoom = 100;
 
 function zoomOut() {
