@@ -89,9 +89,9 @@ $(function() {
 		var targeted_popup_class = $(this).attr('data-popup-open');
 
 		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-		$('.card_slider').slick('unslick').slick('init');
-		$('.room_view').slick('unslick').slick('init');
-		$('.rooms').slick('unslick').slick('init');
+		$('.card_slider').slick('refresh');
+		$('.room_view').slick('refresh');
+		$('.rooms').slick('refresh');
 		$('.zoom_box').addClass('box');
 		$('.control_btn').addClass('box');
 

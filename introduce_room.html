@@ -375,20 +375,55 @@
 		</div>
 		<div class="popup_box__footer">
 			<button type="button"
-			        class="btn btn_close"
+			        class="btn btn_fill"
 			        data-popup-close="schedule_detail"
 			>닫기</button>
 		</div>
 	</div>
 </div>
 
+	<div class="popup_wrap type_loding">
+		<div class="popup_box">
+			<div class="popup_box__container">
+				<div class="loding_lottie">
+					<lottie-player src="./assets/images/loding.json"
+					               class="lottie"
+					               background="transparent"
+					               speed="1"
+					               loop
+					               autoplay
+					></lottie-player>
+				</div>
+				<p>디바이스 연결중 ...</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_wrap type_alert" data-popup="alert_btn1">
+		<div class="popup_box">
+			<div class="popup_box__container">
+				<p>alert line 1</p>
+			</div>
+			<div class="popup_box__footer">
+				<button type="button"
+				        class="btn btn_outline"
+				        data-popup-close="alert_btn1"
+				>닫기</button>
+				<button type="button"
+				        class="btn btn_fill"
+				        data-popup-close="alert_btn1"
+				>확인</button>
+			</div>
+		</div>
+	</div>
+
 
 	<!-- slick -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!-- eroom -->
 	<script type="text/javascript" src="./assets/script/common.js"></script>
-
-
+	<!-- lottie	-->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
 
@@ -632,7 +667,7 @@
 		</div>
 		<div class="popup_box__footer">
 			<button type="button"
-			        class="btn btn_close"
+			        class="btn btn_fill"
 			        data-popup-close="room_detail__eroom"
 			>닫기</button>
 		</div>
@@ -873,7 +908,7 @@
 		</div>
 		<div class="popup_box__footer">
 			<button type="button"
-			        class="btn btn_close"
+			        class="btn btn_fill"
 			        data-popup-close="room_detail__nuri"
 			>닫기</button>
 		</div>
@@ -1114,7 +1149,7 @@
 		</div>
 		<div class="popup_box__footer">
 			<button type="button"
-			        class="btn btn_close"
+			        class="btn btn_fill"
 			        data-popup-close="room_detail__edu"
 			>닫기</button>
 		</div>
@@ -1341,7 +1376,7 @@
 		</div>
 		<div class="popup_box__footer">
 			<button type="button"
-			        class="btn btn_close"
+			        class="btn btn_fill"
 			        data-popup-close="room_detail__small_edu"
 			>닫기</button>
 		</div>
@@ -1567,7 +1602,7 @@
 		</div>
 		<div class="popup_box__footer">
 			<button type="button"
-			        class="btn btn_close"
+			        class="btn btn_fill"
 			        data-popup-close="room_detail__conference"
 			>닫기</button>
 		</div>
@@ -1800,7 +1835,7 @@
 		</div>
 		<div class="popup_box__footer">
 			<button type="button"
-			        class="btn btn_close"
+			        class="btn btn_fill"
 			        data-popup-close="room_detail__meeting"
 			>닫기</button>
 		</div>
