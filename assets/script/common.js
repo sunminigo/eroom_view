@@ -17,7 +17,7 @@ $(function() {
 		arrows: true,
 		dots: true,
 	});
-	$("#info_slider").slick({
+	$('#info_slider').slick({
 		vertical: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -26,13 +26,13 @@ $(function() {
 		arrows: false,
 		verticalSwiping: true
 	});
-	$(".room_view").slick({
+	$('.room_view').slick({
 		autoplay: false,
 		slidesToShow: 1,
 		arrows: false,
 		asNavFor: '.rooms'
 	});
-	$(".rooms").slick({
+	$('.rooms').slick({
 		slidesToShow: 5,
 		arrows: false,
 		focusOnSelect: true,
@@ -88,7 +88,7 @@ $(function() {
 	$('[data-popup-open]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-open');
 
-		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+		$('[data-popup="' + targeted_popup_class + '"]').addClass('active');
 		$('.card_slider').slick('refresh');
 		$('.room_view').slick('refresh');
 		$('.rooms').slick('refresh');
@@ -99,16 +99,18 @@ $(function() {
 	});
 	$('[data-popup-close]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-close');
-		$('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+		$('[data-popup="' + targeted_popup_class + '"]').removeClass('active');
 		$('.zoom_box').removeClass('box');
 		$('.control_btn').removeClass('box');
+
 		e.preventDefault();
 	});
 
 	/****************************************
 	 * TEXT SIZE
 	 *****************************************/
-	$(".control_text").on("click", function () {
+	$('.control_text').on('click', function () {
 		$('html, body').toggleClass('controlFontSize');
 	});
 
@@ -150,6 +152,6 @@ function zooms() {
 			wrapper.style.zoom = nowZoom + "%";
 
 	if(nowZoom === 200) {
-		alert("더 이상 확대할 수 없습니다.");
+		alert('더 이상 확대할 수 없습니다.');
 	}
 }
