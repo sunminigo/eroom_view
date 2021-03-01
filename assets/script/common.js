@@ -5,8 +5,10 @@ $(function() {
 	$('#visual_slider').slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
-		arrows: false,
+		arrows: true,
 		dots: true,
+		prevArrow: '<button type="button" class="prev" alt="버튼 이전"><img src="./assets/images/icon/arrow_angle_left.png" alt=""></button>',
+		nextArrow: '<button type="button" class="next" alt="버튼 다음"><img src="./assets/images/icon/arrow_angle_right.png" alt=""></button>',
 	});
 	$('.card_slider').slick({
 		rows: 2,
@@ -16,15 +18,8 @@ $(function() {
 		autoplaySpeed: 5000,
 		arrows: true,
 		dots: true,
-	});
-	$('#info_slider').slick({
-		vertical: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		arrows: false,
-		verticalSwiping: true
+		prevArrow: '<button type="button" class="prev" alt="버튼 이전"><img src="./assets/images/icon/arrow_angle_left.png" alt=""></button>',
+		nextArrow: '<button type="button" class="next" alt="버튼 다음"><img src="./assets/images/icon/arrow_angle_right.png" alt=""></button>',
 	});
 	$('.room_view').slick({
 		autoplay: false,
@@ -154,4 +149,29 @@ function zooms() {
 	if(nowZoom === 200) {
 		alert('더 이상 확대할 수 없습니다.');
 	}
+}
+
+/****************************************
+ * TEXT READ
+ *****************************************/
+var synth = window.speechSynthesis;
+
+$(function() {
+	$('[alt]').focus(function() {
+		textToSpeech( $(this).attr('alt') );
+	});
+});
+
+function textToSpeech( text ) {
+	var utterThis = new SpeechSynthesisUtterance( text );
+	utterThis.onend = function (event) {
+		console.log('SpeechSynthesisUtterance.onend');
+	}
+	utterThis.onerror = function (event) {
+		console.error('SpeechSynthesisUtterance.onerror');
+	}
+	utterThis.lang = 'ko-KR';
+	utterThis.pitch = 1;
+	utterThis.rate = 1;
+	synth.speak(utterThis);
 }

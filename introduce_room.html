@@ -43,15 +43,16 @@
 <div id="zoom" class="wrapper">
 	<main class="container_wrap">
 		<header>
-			<h1><img src="./assets/images/logo_symbol.svg" alt="eroom simbol" />대관실 소개</h1>
+			<h1 alt="리스트 대관실 소개" tabindex="1"><img src="./assets/images/logo_symbol.svg" alt="이미지 이룸센터로고" />대관실 소개</h1>
 		</header>
 
-		<section class="content_box introduce_page card_box" aria-label="대관실 소개">
+		<section class="content_box introduce_page card_box">
 			<div class="room_box">
 				<figure>
 					<button type="button"
 					        class="btn_show_popup"
 					        data-popup-open="room_detail__eroom"
+					        alt="첫번째 항목 이룸홀 지하 1층"
 					>
 						<img src="./assets/images/banner/eroom_hall/IMG_4217.jpg" alt="" />
 						<figcaption>이룸홀</figcaption>
@@ -62,6 +63,7 @@
 					<button type="button"
 					        class="btn_show_popup"
 					        data-popup-open="room_detail__nuri"
+					        alt="두번째 항목 누리홀 지하 1층"
 					>
 						<img src="./assets/images/banner/nuri_hall/IMG_4190.jpg" alt="" />
 						<figcaption>누리홀</figcaption>
@@ -72,6 +74,7 @@
 					<button type="button"
 					        class="btn_show_popup"
 					        data-popup-open="room_detail__edu"
+					        alt="세번째 항목 교육실 2층"
 					>
 						<img src="./assets/images/banner/edu_room/IMG_4003.jpg" alt="" />
 						<figcaption>교육실</figcaption>
@@ -82,6 +85,7 @@
 					<button type="button"
 					        class="btn_show_popup"
 					        data-popup-open="room_detail__meeting"
+					        alt="네번째 항목 회의실 2층"
 					>
 						<img src="./assets/images/banner/meeting_room/IMG_3459.jpg" alt="" />
 						<figcaption>회의실</figcaption>
@@ -92,6 +96,7 @@
 					<button type="button"
 					        class="btn_show_popup"
 					        data-popup-open="room_detail__conference"
+					        alt="다섯번째 항목 대회의실 2층"
 					>
 						<img src="./assets/images/banner/conference_room/IMG_3433.jpg" alt="" />
 						<figcaption>대회의실</figcaption>
@@ -102,6 +107,7 @@
 					<button type="button"
 					        class="btn_show_popup"
 					        data-popup-open="room_detail__small_edu"
+					        alt="마지막 항목 소교육실 2층"
 					>
 						<img src="./assets/images/banner/small_edu_room/IMG_3963.jpg" alt="" />
 						<figcaption>소교육실</figcaption>
@@ -114,36 +120,55 @@
 		<section class="navigation_box">
 			<nav class="lnb_box">
 				<div class="lnb">
-					<a href="index.html">
-						<img src="./assets/images/icon/arrow_left.png" alt="뒤로가기" />
-					</a>
+					<a href="index.html"
+					   alt="버튼 뒤로가기"
+					><img src="./assets/images/icon/arrow_left.png" alt="" /></a>
 				</div>
 				<div class="lnb">
-					<a href="introduce_eroom.html">아름센터 소개</a>
+					<a href="introduce_eroom.html"
+					   alt="버튼 이룸센터 소개 메뉴"
+					>이룸센터 소개</a>
 				</div>
 				<div class="lnb">
-					<a href="introduce_room.html">대관실 소개</a>
+					<a href="introduce_room.html"
+					   alt="버튼 대관실 소개 메뉴"
+					>대관실 소개</a>
 				</div>
 				<div class="lnb">
-					<a href="introduce_convenience.html">편의시설 안내</a>
+					<a href="introduce_convenience.html"
+					   alt="버튼 편의시설 소개 메뉴"
+					>편의시설 안내</a>
 				</div>
 			</nav>
 		</section>
 
-		<section class="control_box" aria-label="화면 확대축소 및 글자 확대축소가 가능합니다.">
+		<section class="control_box">
 			<div class="zoom_box">
-				<button type="button" onclick="zoomIn()">
-					<img src="./assets/images/icon/magnifier-plus.png" alt="전체 브라우저 확대" />
+				<button type="button"
+				        onclick="zoomIn()"
+				        alt="버튼 화면 확대"
+				>
+					<img src="./assets/images/icon/magnifier-plus.png" alt="" />
 				</button>
-				<button type="button" onclick="zoomOut()">
-					<img src="./assets/images/icon/magnifier-minus.png" alt="전체 브라우저 축소" />
+				<button type="button"
+				        onclick="zoomOut()"
+				        alt="버튼 화면 축소"
+				>
+					<img src="./assets/images/icon/magnifier-minus.png" alt="" />
 				</button>
 			</div>
-			<button type="button" class="control_btn control_text">
-				<img src="./assets/images/icon/text.png" alt="글자크기조절 한번 누르면 확대, 다시 누르면 축소 합니다." />
+			<button type="button"
+			        class="control_btn control_text"
+			        alt="버튼 글자 크기 확대 축소"
+			>
+				<img src="./assets/images/icon/text.png" alt="" />
 			</button>
-			<button type="button" class="control_btn" onclick="location.href='index.html'">
-				<img src="./assets/images/icon/home.png" alt="홈" />
+			<button type="button"
+			        class="control_btn"
+			        onclick="location.href='index.html'"
+			        alt="버튼 홈"
+			>
+				<img src="./assets/images/icon/home.png" alt="" />
 			</button>
 		</section>
 
@@ -166,57 +191,13 @@
 		</article>
 
 		<article class="info_wrap">
-			<h2 class="title">오늘의 대관현황</h2>
+			<h2 class="title"
+			    alt="오늘의대관현황"
+			    tabindex="2"
+			>오늘의 대관현황</h2>
 			<ul class="info_list">
-				<li class="randomColor">
-					<div class="content_box">
-						<h3 class="content_box__title">이사회</h3>
-						<p class="content_box__txt">한국 지적 발달 장애인 협회</p>
-					</div>
-					<div class="title_box">
-						<h4>시간</h4>
-						<p class="title_box__time">09시 ~ 16시</p>
-						<h4>장소</h4>
-						<p class="title_box__place">회의실 4</p>
-					</div>
-				</li>
-				<li class="randomColor">
-					<div class="content_box">
-						<h3 class="content_box__title">이사회</h3>
-						<p class="content_box__txt">한국 지적 발달 장애인 협회</p>
-					</div>
-					<div class="title_box">
-						<h4>시간</h4>
-						<p class="title_box__time">09시 ~ 16시</p>
-						<h4>장소</h4>
-						<p class="title_box__place">회의실 4</p>
-					</div>
-				</li>
-				<li class="randomColor">
-					<div class="content_box">
-						<h3 class="content_box__title">이사회</h3>
-						<p class="content_box__txt">한국 지적 발달 장애인 협회</p>
-					</div>
-					<div class="title_box">
-						<h4>시간</h4>
-						<p class="title_box__time">09시 ~ 16시</p>
-						<h4>장소</h4>
-						<p class="title_box__place">회의실 4</p>
-					</div>
-				</li>
-				<li class="randomColor">
-					<div class="content_box">
-						<h3 class="content_box__title">이사회</h3>
-						<p class="content_box__txt">한국 지적 발달 장애인 협회</p>
-					</div>
-					<div class="title_box">
-						<h4>시간</h4>
-						<p class="title_box__time">09시 ~ 16시</p>
-						<h4>장소</h4>
-						<p class="title_box__place">회의실 4</p>
-					</div>
-				</li>
-				<li class="randomColor">
+				<li class="randomColor"
+				    alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 시간:14시 ~ 16시, 장소:회의실 3">
 					<div class="content_box">
 						<h3 class="content_box__title">이사회</h3>
 						<p class="content_box__txt">한국 지적 발달 장애인 협회</p>
@@ -232,7 +213,8 @@
 			<button type="button"
 			        class="btn_more"
 			        data-popup-open="schedule_detail"
-			><img src="./assets/images/icon/calender.png" alt="" class="m-r-8">일정 전체 보기</button>
+			        alt="버튼 일정 전체보기 메뉴"
+			><img src="./assets/images/icon/calender.png" alt="">일정 전체 보기</button>
 		</article>
 	</section>
 
@@ -240,14 +222,14 @@
 	<div class="popup_wrap rental_detail_popup" data-popup="schedule_detail">
 	<div class="popup_box">
 		<div class="popup_box__header">
-			<h2>대관 일정 안내</h2>
+			<h2 alt="대관일정안내" tabindex="1">대관 일정 안내</h2>
 		</div>
 		<div class="popup_box__container card_box">
 			<div class="rental_detail_list">
 				<div class="card_slider">
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="2">
 						<h3>이사회</h3>
-						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
+						<p class="intro">한국 지적 발달 장애인 협회</p>
 						<div class="info">
 							<p class="info__time">14시 ~ 16시</p>
 							<p class="info__place">회의실 3</p>
@@ -256,10 +238,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="3">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -270,10 +253,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="4">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -284,10 +268,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="5">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -298,10 +283,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="6">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -312,10 +298,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="7">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -326,10 +313,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="8">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -340,10 +328,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="9">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -354,10 +343,11 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3" tabindex="10">
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
 						<div class="info">
@@ -368,6 +358,7 @@
 							<button type="button"
 							        class="btn"
 							        onclick="location.href='floor_B1.html'"
+							        alt="버튼 위치보기"
 							>위치보기</button>
 						</div>
 					</div>
@@ -378,6 +369,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="schedule_detail"
+			        alt="버튼 닫기"
 			>닫기</button>
 		</div>
 	</div>
@@ -403,17 +395,54 @@
 	<div class="popup_wrap type_alert active" data-popup="alert_btn">
 		<div class="popup_box">
 			<div class="popup_box__container">
-				<p>alert line 1</p>
+				<p alt="alert text">alert line 1</p>
 			</div>
 			<div class="popup_box__footer">
 				<button type="button"
 				        class="btn btn_outline"
 				        data-popup-close="alert_btn"
+				        alt="버튼닫기"
+				        tabindex="1"
 				>닫기</button>
 				<button type="button"
 				        class="btn btn_fill"
 				        data-popup-close="alert_btn"
+				        alt="버튼확인"
+				        tabindex="2"
 				>확인</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_floor" class="popup_wrap type_alert active" data-popup="popup_floor">
+		<div class="popup_box">
+			<div class="popup_box__container">
+				<div class="company_wrap">
+					<div class="company_logo"><img src="./assets/images/logos/floor_info_02.png" alt=""></div>
+					<div class="company_name" alt="(사)한국장애인단체총연맹" tabindex="1">(사)한국장애인단체총연맹</div>
+					<div class="company_info" alt="위치 : 401호, 전화 : 02-796-4280" tabindex="2">위치 : 401호<br/>전화 : 02-796-4280</div>
+				</div>
+			</div>
+			<div class="popup_box__footer">
+				<div>
+					<button type="button"
+					        class="btn btn_outline"
+					        data-popup-close="popup_floor"
+					        alt="버튼 닫기"
+					>닫기</button>
+				</div>
+				<div>
+					<button type="button"
+					        class="btn btn_fill"
+					        data-popup-close="popup_floor"
+					        alt="버튼 전체경로"
+					>전체경로</button>
+					<button type="button"
+					        class="btn btn_fill"
+					        data-popup-close="popup_floor"
+					        alt="버튼 3D 길안내"
+					>3D 길안내</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -432,44 +461,50 @@
      data-popup="room_detail__eroom"
 >
 	<div class="popup_box">
-		<div class="popup_box__header"><h2>대관실 상세 소개</h2></div>
+		<div class="popup_box__header">
+			<h2 alt="대관실상세소개" tabindex="1">대관실 상세 소개</h2>
+		</div>
 		<div class="popup_box__container">
 			<section class="tab_box" aria-label="이룸홀 사진">
-				<h2 class="section_title">대관실 정보</h2>
+				<h2 class="section_title" alt="대관실정보" tabindex="2">대관실 정보</h2>
 				<div class="room_view">
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4217.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4217.jpg" alt="이미지 큰이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4231.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4231.jpg" alt="이미지 큰이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4235.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4235.jpg" alt="이미지 큰이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4239.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4239.jpg" alt="이미지 큰이미지4" />
 					</div>
 				</div>
 				<div class="rooms">
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4217.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4217.jpg" alt="이미지 작은이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4231.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4231.jpg" alt="이미지 작은이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4235.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4235.jpg" alt="이미지 작은이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4239.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/eroom_hall/IMG_4239.jpg" alt="이미지 작은이미지4" />
 					</div>
 				</div>
 			</section>
 			<section class="room_introduction" aria-label="이룸홀 안내">
-				<h2 class="section_title">이룸홀 - 지하 1층</h2>
+				<h2 class="section_title" alt="이룸홀지하1층" tabindex="3">이룸홀 - 지하 1층</h2>
 
 				<div class="room_intro">
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="좌석:총 150석, 면적:107평(353㎡) 가로:16.3m 세로:19.5m(단상전) 높이:2.9m, 부속설비: 기본설비: 마이크(유선2, 무선4), 인터넷(무선), 화이트보드, 유료설비: 노트북(해상도:1350*768), 빔(스크린사이즈 200인치), 마이크(유선2 추가), 녹음, 책상사이즈(mm): 2인용 책상(24개) 1500(W)*500(D)*720(H), 3인용 책상(47개) 1800(W)*500(D)*720(H), 의자 150개, 현수막(mm): 가로 6000 x 세로 600, 무대전체 현수막 가로 8000 x 세로 2700, 정수기:각 층 대관실 로비 공용정수기 2개 사용"
+					       tabindex="4"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -492,8 +527,7 @@
 							<tr>
 								<th>부속설비</th>
 								<td align="left">
-									<p>기본설비: 마이크(유선2, 무선4), 인터넷(무선), 화이트보드
-									   </p>
+									<p>기본설비: 마이크(유선2, 무선4), 인터넷(무선), 화이트보드</p>
 									<p>유료설비: 노트북(해상도:1350*768), 빔(스크린사이즈 200인치), 마이크(유선2 추가), 녹음</p>
 								</td>
 							</tr>
@@ -521,14 +555,23 @@
 						</tbody>
 					</table>
 
-					<div class="info">
-						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.
-						</p>
+					<div class="info" alt="* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다. * 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다." tabindex="5">
+						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.</p>
 						<p class="text-danger">* 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다.</p>
 					</div>
 
-					<h2 class="title first_title">기본 이용요금</h2>
-					<table cellspacing="0" cellpadding="0">
+					<h2 class="title first_title" alt="대관실상세소개" tabindex="6">기본 이용요금</h2>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="
+					       시간:09:00~13:00, 기본요금:605,000원,
+					       시간:13:00~18:00, 기본요금:660,000원,
+					       시간:18:00~21:00, 기본요금:792,000원,
+					       시간:토요일09:00~13:00, 기본요금:726,000원,
+					       시간:토요일13:00~18:00, 기본요금:792,000원,
+					       * VAT포함 된 가격입니다."
+					       tabindex="7"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -564,8 +607,18 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">할인 이용요금</h3>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title" alt="할인이용요금" tabindex="8">할인 이용요금</h3>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="
+					       시간:09:00~13:00, 장애인단체(70% 할인):181,500원, 사회복지기관(50% 할인):302,500원, 장애인개인(30% 할인):423,500원,
+					       시간:13:00~18:00, 장애인단체(70% 할인):198,000원, 사회복지기관(50% 할인):330,000원, 장애인개인(30% 할인):462,000원,
+					       시간:18:00~21:00, 장애인단체(70% 할인):237,600원, 사회복지기관(50% 할인):396,000원, 장애인개인(30% 할인):554,400원,
+					       시간:토요일09:00~13:00, 장애인단체(70% 할인):217,800원, 사회복지기관(50% 할인):363,000원, 장애인개인(30% 할인):508,200원,
+					       시간:토요일13:00~18:00, 장애인단체(70% 할인):237,600원, 사회복지기관(50% 할인):396,000원, 장애인개인(30% 할인):554,400원,
+					       * VAT포함 된 가격입니다."
+					       tabindex="9"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -615,9 +668,13 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">환불규정</h3>
-					<h4 class="sub_title" style="margin-top: 60px;">이룸홀/누리홀 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title" alt="환불규정" tabindex="10">환불규정</h3>
+					<h4 class="sub_title" style="margin-top: 60px;" alt="이룸홀/누리홀 환불규정" tabindex="11">이룸홀/누리홀 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 15일전 100% 7일전 50% 6일전~당일 0%"
+					       tabindex="12"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -640,8 +697,12 @@
 						</tbody>
 					</table>
 
-					<h4 class="sub_title">교육실/회의실/소교육실 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h4 class="sub_title" alt="교육실/회의실/소교육실 환불규정" tabindex="12">교육실/회의실/소교육실 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 7일전 100% 3일전 50% 2일전~당일 0%"
+					       tabindex="13"
+					>
 					<colgroup>
 						<col style="width: 30%;">
 						<col style="width: 23%;">
@@ -670,6 +731,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="room_detail__eroom"
+			        alt="버튼 닫기"
 			>닫기</button>
 		</div>
 	</div>
@@ -679,44 +741,50 @@
      data-popup="room_detail__nuri"
 >
 	<div class="popup_box">
-		<div class="popup_box__header"><h2>대관실 상세 소개</h2></div>
+		<div class="popup_box__header">
+			<h2 alt="대관실상세소개" tabindex="1">대관실 상세 소개</h2>
+		</div>
 		<div class="popup_box__container">
 			<section class="tab_box" aria-label="누리홀 사진">
-				<h2 class="section_title">대관실 정보</h2>
+				<h2 class="section_title" alt="대관실정보" tabindex="2">대관실 정보</h2>
 				<div class="room_view">
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4190.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4190.jpg" alt="이미지 큰이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4195.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4195.jpg" alt="이미지 큰이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4204.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4204.jpg" alt="이미지 큰이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4210.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4210.jpg" alt="이미지 큰이미지4" />
 					</div>
 				</div>
 				<div class="rooms">
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4190.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4190.jpg" alt="이미지 작은이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4195.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4195.jpg" alt="이미지 작은이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4204.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4204.jpg" alt="이미지 작은이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4210.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/nuri_hall/IMG_4210.jpg" alt="이미지 작은이미지4" />
 					</div>
 				</div>
 			</section>
 			<section class="room_introduction" aria-label="누리홀 안내">
-				<h2 class="section_title">누리홀 - 지하 1층</h2>
+				<h2 class="section_title" alt="누리홀지하1층" tabindex="3">누리홀 - 지하 1층</h2>
 
 				<div class="room_intro">
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="좌석:총 150석, 면적:77평(254㎡) / 가로:16.4m 세로:12m / 높이:2.9m / 가로:5.1m 세로:11.1m / 높이:2.7m, 부속설비:기본설비: 마이크(유선2, 무선4), 인터넷(무선), 화이트보드, 유료설비: 노트북(해상도:1350*768), 빔(스크린사이즈 200인치), 마이크(유선2 추가), 녹음, 마이크(유선2 추가), 책상사이즈(mm):3인용 책상 1800(W)*500(D)*720(H), 현수막(mm):가로 6000 x 세로 600, 정수기:각 층 대관실 로비 공용정수기 2개 사용"
+					       tabindex="4"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -762,14 +830,25 @@
 						</tbody>
 					</table>
 
-					<div class="info">
+					<div class="info"
+					     alt="* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다. * 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다."
+					     tabindex="5"
+					>
 						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.
 						</p>
 						<p class="text-danger">* 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다.</p>
 					</div>
 
-					<h2 class="title first_title">기본 이용요금</h2>
-					<table cellspacing="0" cellpadding="0">
+					<h2 class="title first_title" alt="대관실상세소개" tabindex="6">기본 이용요금</h2>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간:09:00~13:00, 기본요금:440,000원,
+					        시간:13:00~18:00, 기본요금:495,000원,
+					         시간:18:00~21:00, 기본요금:594,000원,
+					          시간:토요일 09:00~13:00, 기본요금:528,000원,
+					           시간:토요일 13:00~18:00, 기본요금:594,000원 * VAT포함 된 가격입니다."
+					       tabindex="7"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -805,8 +884,12 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="sub_title">할인 이용요금</h3>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="sub_title" alt="할인 이용요금" tabindex="7">할인 이용요금</h3>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간:09:00~13:00, 장애인단체(70% 할인):132,000원, 사회복지기관(50% 할인):220,000원, 장애인개인(30% 할인):308,000원, 시간:13:00~18:00, 장애인단체(70% 할인):148,500원, 사회복지기관(50% 할인):247,500원, 장애인개인(30% 할인):346,500원, 시간:18:00~21:00, 장애인단체(70% 할인):178,200원, 사회복지기관(50% 할인):297,000원, 장애인개인(30% 할인):415,800원, 시간:토요일 09:00~13:00, 장애인단체(70% 할인):158,400원, 사회복지기관(50% 할인):264,000원, 장애인개인(30% 할인):369,600원, 시간:토요일 13:00~18:00, 장애인단체(70% 할인):178,200원, 사회복지기관(50% 할인):297,000원, 장애인개인(30% 할인):415,800원, * VAT포함 된 가격입니다."
+					       tabindex="8"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -821,7 +904,7 @@
 								<th>장애인개인<br/><span class="text-danger">(30% 할인)</span></th>
 							</tr>
 							</thead>
-							<tbody>
+						<tbody>
 							<tr>
 								<th>오전<br/>09:00~13:00</th>
 								<td>132,000원</td>
@@ -856,9 +939,13 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">환불규정</h3>
-					<h4 class="sub_title" style="margin-top: 60px;">이룸홀/누리홀 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title" alt="환불규정" tabindex="9">환불규정</h3>
+					<h4 class="sub_title" style="margin-top: 60px;" alt="이룸홀/누리홀 환불규정" tabindex="10">이룸홀/누리홀 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 15일전 100% 7일전 50% 6일전~당일 0%"
+					       tabindex="11"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -881,8 +968,12 @@
 						</tbody>
 					</table>
 
-					<h4 class="sub_title">교육실/회의실/소교육실 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h4 class="sub_title" alt="교육실/회의실/소교육실 환불규정" tabindex="12">교육실/회의실/소교육실 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 7일전 100% 3일전 50% 2일전~당일 0%"
+					       tabindex="13"
+					>
 					<colgroup>
 						<col style="width: 30%;">
 						<col style="width: 23%;">
@@ -911,6 +1002,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="room_detail__nuri"
+			        alt="버튼 닫기"
 			>닫기</button>
 		</div>
 	</div>
@@ -920,50 +1012,56 @@
      data-popup="room_detail__edu"
 >
 	<div class="popup_box">
-		<div class="popup_box__header"><h2>대관실 상세 소개</h2></div>
+		<div class="popup_box__header">
+			<h2 alt="대관실상세소개" tabindex="1">대관실 상세 소개</h2>
+		</div>
 		<div class="popup_box__container">
-			<section class="tab_box" aria-label="교육실 사진">
-				<h2 class="section_title">대관실 정보</h2>
+			<section class="tab_box" aria-label="이룸홀 사진">
+				<h2 class="section_title" alt="대관실정보" tabindex="2">대관실 정보</h2>
 				<div class="room_view">
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4003.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4003.jpg" alt="이미지 큰이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4008.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4008.jpg" alt="이미지 큰이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4016.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4016.jpg" alt="이미지 큰이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4029.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4029.jpg" alt="이미지 큰이미지4" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4035.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4035.jpg" alt="이미지 큰이미지5" />
 					</div>
 				</div>
 				<div class="rooms">
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4003.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4003.jpg" alt="이미지 작은이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4008.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4008.jpg" alt="이미지 작은이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4016.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4016.jpg" alt="이미지 작은이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4029.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4029.jpg" alt="이미지 작은이미지4" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/edu_room/IMG_4035.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/edu_room/IMG_4035.jpg" alt="이미지 작은이미지5" />
 					</div>
 				</div>
 			</section>
 			<section class="room_introduction" aria-label="교육실 안내">
-				<h2 class="section_title">교육실 1,2 - 2층</h2>
+				<h2 class="section_title" alt="교육실1,2 2층" tabindex="3">교육실 1,2 - 2층</h2>
 
 				<div class="room_intro">
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="좌석:총 63석, 면적:31.5평(104㎡) / 가로:9.2m 세로:11.2m / 높이:2.7m, 부속설비:기본설비: 마이크(무선2), 인터넷(무선), 화이트보드,유료설비: 빔(스크린사이즈 120인치), 컴퓨터, 마이크(유선2 추가), 책상사이즈(mm):2인용(21개)1400(W)*500(D)*720(H),3인용(7개)1800(W)*500(D)*720(H), 현수막(mm):가로 5000 × 세로 600, 정수기:각 층 대관실 로비 공용정수기 2개 사용"
+					       tabindex="4"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1010,14 +1108,23 @@
 						</tbody>
 					</table>
 
-					<div class="info">
-						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.
-						</p>
+					<div class="info" alt="* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다. * 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다." tabindex="4">
+						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.</p>
 						<p class="text-danger">* 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다.</p>
 					</div>
 
-					<h2 class="title first_title">기본 이용요금</h2>
-					<table cellspacing="0" cellpadding="0">
+					<h2 class="title first_title" alt="기본이용요금" tabindex="5">기본 이용요금</h2>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="
+					        시간:09:00~13:00, 기본요금:330,000원,
+					        시간:13:00~18:00, 기본요금:385,000원,
+					        시간:18:00~21:00, 기본요금:440,000원,
+					        시간:09:00~13:00, 기본요금:396,000원,
+					        시간:13:00~18:00, 기본요금:462,000원,
+					        * VAT포함 된 가격입니다."
+					       tabindex="6"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1053,8 +1160,18 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="sub_title">할인 이용요금</h3>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="sub_title" alt="" tabindex="7">할인 이용요금</h3>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="
+					       시간:09:00~13:00, 장애인단체/사회복지기관(80% 할인):66,000원, 장애인개인(30% 할인):231,000원,
+					       시간:13:00~18:00, 장애인단체/사회복지기관(80% 할인):77,000원, 장애인개인(30% 할인):269,500원,
+					       시간:18:00~21:00, 장애인단체/사회복지기관(80% 할인):88,000원, 장애인개인(30% 할인):308,000원,
+					       시간:토요일09:00~13:00, 장애인단체/사회복지기관(80% 할인):79,200원, 장애인개인(30% 할인):277,200원,
+					       시간:토요일13:00~18:00, 장애인단체/사회복지기관(80% 할인):92,400원, 장애인개인(30% 할인):323,400원,
+					       * VAT포함 된 가격입니다."
+					       tabindex="8"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 36%;">
@@ -1066,8 +1183,8 @@
 								<th>장애인단체 / 사회복지기관<br/><span class="text-danger">(80% 할인)</span></th>
 								<th>장애인개인<br/><span class="text-danger">(30% 할인)</span></th>
 							</tr>
-							</thead>
-							<tbody>
+						</thead>
+						<tbody>
 							<tr>
 								<th>오전<br/>09:00~13:00</th>
 								<td>66,000원</td>
@@ -1097,9 +1214,13 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">환불규정</h3>
-					<h4 class="sub_title" style="margin-top: 60px;">이룸홀/누리홀 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title" alt="환불규정" tabindex="9">환불규정</h3>
+					<h4 class="sub_title" style="margin-top: 60px;" alt="이룸홀/누리홀 환불규정" tabindex="10">이룸홀/누리홀 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 15일전 100% 7일전 50% 6일전~당일 0%"
+					       tabindex="11"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -1122,8 +1243,12 @@
 						</tbody>
 					</table>
 
-					<h4 class="sub_title">교육실/회의실/소교육실 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h4 class="sub_title" alt="교육실/회의실/소교육실 환불규정" tabindex="12">교육실/회의실/소교육실 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 7일전 100% 3일전 50% 2일전~당일 0%"
+					       tabindex="13"
+					>
 					<colgroup>
 						<col style="width: 30%;">
 						<col style="width: 23%;">
@@ -1152,6 +1277,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="room_detail__edu"
+			        alt="버튼 닫기"
 			>닫기</button>
 		</div>
 	</div>
@@ -1161,44 +1287,50 @@
      data-popup="room_detail__small_edu"
 >
 	<div class="popup_box">
-		<div class="popup_box__header"><h2>대관실 상세 소개</h2></div>
+		<div class="popup_box__header">
+			<h2 alt="대관실상세소개" tabindex="1">대관실 상세 소개</h2>
+		</div>
 		<div class="popup_box__container">
 			<section class="tab_box" aria-label="소교육실 사진">
-				<h2 class="section_title">대관실 정보</h2>
+				<h2 class="section_title" alt="대관실 정보" tabindex="2">대관실 정보</h2>
 				<div class="room_view">
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3963.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3963.jpg" alt="이미지 큰이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3976.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3976.jpg" alt="이미지 큰이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3986.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3986.jpg" alt="이미지 큰이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3996.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3996.jpg" alt="이미지 큰이미지4" />
 					</div>
 				</div>
 				<div class="rooms">
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3963.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3963.jpg" alt="이미지 작은이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3976.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3976.jpg" alt="이미지 작은이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3986.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3986.jpg" alt="이미지 작은이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3996.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/small_edu_room/IMG_3996.jpg" alt="이미지 작은이미지4" />
 					</div>
 				</div>
 			</section>
 			<section class="room_introduction" aria-label="소교육실 안내">
-				<h2 class="section_title">소교육실- 2층</h2>
+				<h2 class="section_title" alt="소교육실- 2층" tabindex="3">소교육실- 2층</h2>
 
 				<div class="room_intro">
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="좌석:총 35석, 면적:18.4평(61㎡) / 가로:5.1m 세로:11.1m / 높이:2.7m,부속설비:기본설비: 마이크(무선2), 인터넷(무선), 화이트보드 유료설비: 빔(스크린사이즈 120인치), 마이크(유선2 추가), 책상사이즈(mm):1인용 627(W)*488(D)*720(H), 현수막(mm):가로 5000 × 세로 600, 정수기:각 층 대관실 로비 공용정수기 2개 사용"
+					       tabindex="4"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1244,14 +1376,18 @@
 						</tbody>
 					</table>
 
-					<div class="info">
+					<div class="info" alt="* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다. * 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다." tabindex="5">
 						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.
 						</p>
 						<p class="text-danger">* 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다.</p>
 					</div>
 
-					<h2 class="title first_title">기본 이용요금</h2>
-					<table cellspacing="0" cellpadding="0">
+					<h2 class="title first_title" alt="기본이용요금" tabindex="6">기본 이용요금</h2>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간 오전09:00~13:00 기본요금 시간당 33,000원 20% 할증요금 (18시 이후 야간/토요일 대관시 20% 할증요금 부과) - 시간당 39,600원 * VAT포함 된 가격입니다."
+					       tabindex="7"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1275,8 +1411,12 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="sub_title">할인 이용요금</h3>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="sub_title" alt="할인이용요금" tabindex="7">할인 이용요금</h3>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간 오전09:00~13:00 장애인단체/사회복지기관(80% 할인) 시간당 6,600원 20% 할증요금 - 시간당 7,920원 (18시 이후 야간/토요일 대관시 20% 할증요금 부과)"
+					       tabindex="8"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1300,7 +1440,11 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간 오전09:00~13:00 장애인개인(30% 할인) 20% 할증요금 - 시간당 27,720원(18시 이후 야간/토요일 대관시 20% 할증요금 부과) * VAT포함 된 가격입니다."
+					       tabindex="8"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1324,9 +1468,13 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">환불규정</h3>
-					<h4 class="sub_title" style="margin-top: 60px;">이룸홀/누리홀 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title" alt="환불규정" tabindex="9">환불규정</h3>
+					<h4 class="sub_title" style="margin-top: 60px;" alt="이룸홀/누리홀 환불규정" tabindex="10">이룸홀/누리홀 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 15일전 100% 7일전 50% 6일전~당일 0%"
+					       tabindex="11"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -1349,8 +1497,12 @@
 						</tbody>
 					</table>
 
-					<h4 class="sub_title">교육실/회의실/소교육실 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h4 class="sub_title" alt="교육실/회의실/소교육실 환불규정" tabindex="12">교육실/회의실/소교육실 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 7일전 100% 3일전 50% 2일전~당일 0%"
+					       tabindex="13"
+					>
 					<colgroup>
 						<col style="width: 30%;">
 						<col style="width: 23%;">
@@ -1379,6 +1531,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="room_detail__small_edu"
+			        alt="버튼 닫기"
 			>닫기</button>
 		</div>
 	</div>
@@ -1388,44 +1541,56 @@
      data-popup="room_detail__conference"
 >
 	<div class="popup_box">
-		<div class="popup_box__header"><h2>대관실 상세 소개</h2></div>
+		<div class="popup_box__header">
+			<h2 alt="대관실 정보" tabindex="1">대관실 상세 소개</h2>
+		</div>
 		<div class="popup_box__container">
-			<section class="tab_box" aria-label="대회의실 사진">
-				<h2 class="section_title">대관실 정보</h2>
+			<section class="tab_box">
+				<h2 class="section_title"
+				    alt="대관실 정보"
+				    tabindex="2"
+				>대관실 정보</h2>
 				<div class="room_view">
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3433.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3433.jpg" alt="이미지 큰이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3443.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3443.jpg" alt="이미지 큰이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3450.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3450.jpg" alt="이미지 큰이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3455.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3455.jpg" alt="이미지 큰이미지4" />
 					</div>
 				</div>
 				<div class="rooms">
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3433.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3433.jpg"  alt="이미지 작은이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3443.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3443.jpg" alt="이미지 작은이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3450.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3450.jpg" alt="이미지 작은이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/conference_room/IMG_3455.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/conference_room/IMG_3455.jpg" alt="이미지 작은이미지4" />
 					</div>
 				</div>
 			</section>
-			<section class="room_introduction" aria-label="대회의실 안내">
-				<h2 class="section_title">대회의실 - 2층</h2>
+			<section class="room_introduction">
+				<h2 class="section_title"
+				    alt="대회의실 2층"
+				    tabindex="3"
+				>대회의실 - 2층</h2>
 
 				<div class="room_intro">
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="좌석 총 21석 면적 18.4평(61㎡) / 가로:5m 세로:12m / 높이:2.7m 부속설비 기본설비: 마이크(회의용, 무선1), 인터넷(무선), 화이트보드 유료설비: 빔(스크린사이즈 120인치), 마이크(유선2 추가), 녹음, 화상회의 시스템 책상사이즈(mm) 2인용 1600(W)*750(D)*720(H) 현수막(mm) 가로 5000 × 세로 600 정수기 각 층 대관실 로비 공용정수기 2개 사용"
+					       tabindex="4"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1471,14 +1636,20 @@
 						</tbody>
 					</table>
 
-					<div class="info">
+					<div class="info" alt="* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다. * 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다."
+					     tabindex="5"
+					>
 						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.
 						</p>
 						<p class="text-danger">* 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다.</p>
 					</div>
 
-					<h2 class="title first_title">기본 이용요금</h2>
-					<table cellspacing="0" cellpadding="0">
+					<h2 class="title first_title" alt="기본 이용요금" tabindex="6">기본 이용요금</h2>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간 오전<br/>09:00~13:00 기본요금 시간당 33,000원 20% 할증요금 - 시간당 39,600원 (18시 이후 야간/토요일 대관시 20% 할증요금 부과) * VAT포함 된 가격입니다."
+					       tabindex="7"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1502,8 +1673,12 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">할인 이용요금</h3>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title" alt="할인 이용요금" tabindex="8">할인 이용요금</h3>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간 오전09:00~13:00 장애인단체 / 사회복지기관(80% 할인) 시간당 6,600원 20% 할증요금 - 시간당 7,920원 (18시 이후 야간/토요일 대관시 20% 할증요금 부과) * VAT포함 된 가격입니다."
+					       tabindex="9"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1526,7 +1701,11 @@
 						</tbody>
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간 오전09:00~13:00 장애인개인(30% 할인) 시간당 23,100원 20% 할증요금 - 시간당 27,720원 (18시 이후 야간/토요일 대관시 20% 할증요금 부과) * VAT포함 된 가격입니다."
+					       tabindex="10"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1550,9 +1729,17 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">환불규정</h3>
-					<h4 class="sub_title" style="margin-top: 60px;">이룸홀/누리홀 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title" alt="환불규정" tabindex="11">환불규정</h3>
+					<h4 class="sub_title"
+					    style="margin-top: 60px;"
+					    alt="이룸홀/누리홀 환불규정"
+					    tabindex="12"
+					>이룸홀/누리홀 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 15일전 100% 7일전 50% 6일전~당일 0%"
+					       tabindex="13"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -1575,8 +1762,12 @@
 						</tbody>
 					</table>
 
-					<h4 class="sub_title">교육실/회의실/소교육실 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h4 class="sub_title" alt="교육실/회의실/소교육실 환불규정" tabindex="19">교육실/회의실/소교육실 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 7일전 100% 3일전 50% 2일전~당일 0%"
+					       tabindex="14"
+					>
 					<colgroup>
 						<col style="width: 30%;">
 						<col style="width: 23%;">
@@ -1605,6 +1796,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="room_detail__conference"
+			        alt="버튼 닫기"
 			>닫기</button>
 		</div>
 	</div>
@@ -1614,50 +1806,61 @@
      data-popup="room_detail__meeting"
 >
 	<div class="popup_box">
-		<div class="popup_box__header"><h2>대관실 상세 소개</h2></div>
+		<div class="popup_box__header">
+			<h2 alt="대관실상세소개" tabindex="1">대관실 상세 소개</h2>
+		</div>
 		<div class="popup_box__container">
 			<section class="tab_box" aria-label="회의실 사진">
-				<h2 class="section_title">대관실 정보</h2>
+				<h2 class="section_title" alt="대관실정보" tabindex="2">대관실 정보</h2>
 				<div class="room_view">
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3459.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3459.jpg" alt="이미지 큰이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3463.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3463.jpg" alt="이미지 큰이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3475.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3475.jpg" alt="이미지 큰이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3483.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3483.jpg" alt="이미지 큰이미지4" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3487.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3487.jpg" alt="이미지 큰이미지5" />
 					</div>
 				</div>
 				<div class="rooms">
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3459.jpg" alt="" />
-					</div>
-					<div><img data-lazy="./assets/images/banner/meeting_room/IMG_3463.jpg" alt="" />
-
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3459.jpg" alt="이미지 작은이미지1" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3475.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3463.jpg" alt="이미지 작은이미지2" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3483.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3475.jpg" alt="이미지 작은이미지3" />
 					</div>
 					<div>
-						<img data-lazy="./assets/images/banner/meeting_room/IMG_3487.jpg" alt="" />
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3483.jpg" alt="이미지 작은이미지4" />
+					</div>
+					<div>
+						<img data-lazy="./assets/images/banner/meeting_room/IMG_3487.jpg" alt="이미지 작은이미지5" />
 					</div>
 				</div>
 			</section>
 			<section class="room_introduction" aria-label="회의실 안내">
-				<h2 class="section_title">회의실 1,2 - 2층</h2>
+				<h2 class="section_title" alt="회의실1,2 2층" tabindex="3">회의실 1,2 - 2층</h2>
 
 				<div class="room_intro">
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="좌석:총 24석,
+					        면적:17평(56㎡) / 가로:5.8m 세로:9.4m / 높이:2.7m,
+					        부속설비:기본설비: 인터넷(무선), 화이트보드, 화이트보드, 유료설비: 빔(스크린사이즈 120인치),
+					         책상사이즈(mm):3인용 1800(W)*600(D)*720(H),
+					        현수막(mm):가로 5000 × 세로 600,
+					        정수기:각 층 대관실 로비 공용정수기 2개 사용"
+					       tabindex="1"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1703,14 +1906,20 @@
 						</tbody>
 					</table>
 
-					<div class="info">
-						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.
-						</p>
+					<div class="info"
+					     alt="* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다. * 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다."
+					     tabindex="4"
+					>
+						<p class="brandColor_orange">* 대관실별 좌석 이외의 추가 책걸상 지원은 어려우니 감안하셔서 대관실을 여유있게 선택해 주시면 감사하겠습니다.</p>
 						<p class="text-danger">* 대관신청 시 반드시 준비시간과 정리시간을 포함하여 신청하시기 바랍니다.</p>
 					</div>
 
-					<h2 class="title first_title">기본 이용요금</h2>
-					<table cellspacing="0" cellpadding="0">
+					<h2 class="title first_title" alt="기본 이용요금" tabindex="5">기본 이용요금</h2>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간:09:00~13:00, 기본요금:시간당 33,000원 20% 할증요금 - 시간당 39,600원(18시 이후 야간/토요일 대관시 20% 할증요금 부과) * VAT포함 된 가격입니다."
+					       tabindex="6"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1734,8 +1943,12 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="sub_title">할인 이용요금</h3>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="sub_title" alt="할인 이용요금" tabindex="6">할인 이용요금</h3>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간:09:00~13:00, 장애인단체 / 사회복지기관(80% 할인):시간당 6,600원 20% 할증요금 - 시간당 7,920원 (18시 이후 야간/토요일 대관시 20% 할증요금 부과) * VAT포함 된 가격입니다."
+					       tabindex="7"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1759,7 +1972,11 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<table cellspacing="0" cellpadding="0">
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="시간: 09:00~13:00, 장애인개인(30% 할인):시간당 23,100원 20% 할증요금 - 시간당 27,720원 (18시 이후 야간/토요일 대관시 20% 할증요금 부과) * VAT포함 된 가격입니다."
+					       tabindex="8"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: auto;">
@@ -1783,9 +2000,20 @@
 					</table>
 					<p class="brandColor_orange vat">* VAT포함 된 가격입니다.</p>
 
-					<h3 class="title">환불규정</h3>
-					<h4 class="sub_title" style="margin-top: 60px;">이룸홀/누리홀 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h3 class="title"
+					    alt="환불규정"
+					    tabindex="9"
+					>환불규정</h3>
+					<h4 class="sub_title"
+					    style="margin-top: 60px;"
+					    alt="이룸홀/누리홀 환불규정"
+					    tabindex="10"
+					>이룸홀/누리홀 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 15일전 100% 7일전 50% 6일전~당일 0%"
+					       tabindex="11"
+					>
 						<colgroup>
 							<col style="width: 30%;">
 							<col style="width: 23%;">
@@ -1808,8 +2036,12 @@
 						</tbody>
 					</table>
 
-					<h4 class="sub_title">교육실/회의실/소교육실 환불규정</h4>
-					<table cellspacing="0" cellpadding="0">
+					<h4 class="sub_title" alt="교육실/회의실/소교육실 환불규정" tabindex="12">교육실/회의실/소교육실 환불규정</h4>
+					<table cellspacing="0"
+					       cellpadding="0"
+					       alt="취소시기/환불비율 7일전 100% 3일전 50% 2일전~당일 0%"
+					       tabindex="13"
+					>
 					<colgroup>
 						<col style="width: 30%;">
 						<col style="width: 23%;">
@@ -1838,6 +2070,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="room_detail__meeting"
+			        alt="버튼 닫기"
 			>닫기</button>
 		</div>
 	</div>
