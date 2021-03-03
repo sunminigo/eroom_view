@@ -42,28 +42,89 @@
 
 <div id="zoom" class="wrapper">
 	<main class="container_wrap">
-		<header alt="리스트 편의시설 안내 리스트" tabindex="1">
+		<section class="control_box">
+			<div class="zoom_box">
+				<button type="button"
+				        onclick="zoomIn()"
+				        alt="버튼 화면 확대"
+				>
+					<img src="./assets/images/icon/magnifier-plus.png" alt="" />
+				</button>
+				<button type="button"
+				        onclick="zoomOut()"
+				        alt="버튼 화면 축소"
+				>
+					<img src="./assets/images/icon/magnifier-minus.png" alt="" />
+				</button>
+			</div>
+			<button type="button"
+			        class="control_btn control_text"
+			        alt="버튼 글자 크기 확대 축소"
+			>
+				<img src="./assets/images/icon/text.png" alt="" />
+			</button>
+			<button type="button"
+			        class="control_btn"
+			        onclick="location.href='index.html'"
+			        alt="버튼 홈"
+			        tabindex="1"
+			>
+				<img src="./assets/images/icon/home.png" alt="" />
+			</button>
+		</section>
+
+		<section class="navigation_box">
+			<nav class="lnb_box">
+				<div class="lnb">
+					<a href="index.html"
+					   alt="버튼 뒤로가기"
+					   tabindex="2"
+					><img src="./assets/images/icon/arrow_left.png" alt="" /></a>
+				</div>
+				<div class="lnb">
+					<a href="introduce_eroom.html"
+					   alt="버튼 이룸센터 소개 메뉴"
+					   tabindex="3"
+					>이룸센터 소개</a>
+				</div>
+				<div class="lnb">
+					<a href="introduce_room.html"
+					   alt="버튼 대관실 소개 메뉴"
+					   tabindex="4"
+					>대관실 소개</a>
+				</div>
+				<div class="lnb">
+					<a href="introduce_convenience.html"
+					   alt="버튼 편의시설 소개 메뉴"
+					   tabindex="5"
+					>편의시설 안내</a>
+				</div>
+			</nav>
+		</section>
+
+
+		<header alt="리스트 편의시설 안내 리스트" >
 			<h1><img src="./assets/images/logo_symbol.svg" alt="eroom simbol" />편의시설 안내</h1>
 		</header>
 
 		<section class="content_box introduce_page card_box">
 			<div class="convenience_box card_slider">
-				<figure alt="첫번째 항목 안내 촉지도 이룸센터 정문 앞" tabindex="2">
+				<figure alt="첫번째 항목 안내 촉지도 이룸센터 정문 앞" >
 					<img src="./assets/images/banner/convenience/item_1.jpg" alt="" />
 					<figcaption>안내 촉지도</figcaption>
 					<p>이룸센터 정문 앞</p>
 				</figure>
-				<figure alt="두번째 항목 화상전화기 전동휠체어 급속 충전기B1,2층" tabindex="3">
+				<figure alt="두번째 항목 화상전화기 전동휠체어 급속 충전기B1,2층" >
 					<img src="./assets/images/banner/convenience/item_2.jpg" alt="" />
 					<figcaption>화상전화기</figcaption>
 					<p>전동휠체어 급속 충전기B1,2층</p>
 				</figure>
-				<figure alt="세번째 항목 전동휠체어 급속 충전기 B1,2층" tabindex="4">
+				<figure alt="세번째 항목 전동휠체어 급속 충전기 B1,2층" >
 					<img src="./assets/images/banner/convenience/item_3.jpg" alt="" />
 					<figcaption>전동휠체어 급속 충전기</figcaption>
 					<p>B1,2층</p>
 				</figure>
-				<figure alt="네번째 항목 물품보관함 이룸센터 정문 앞" tabindex="5">
+				<figure alt="네번째 항목 물품보관함 이룸센터 정문 앞" >
 					<img src="./assets/images/banner/convenience/item_4.jpg" alt="" />
 					<figcaption>물품보관함</figcaption>
 					<p>이룸센터 정문 앞</p>
@@ -125,62 +186,6 @@
 				</figure>
 			</div>
 		</section>
-
-		<section class="navigation_box">
-			<nav class="lnb_box">
-				<div class="lnb">
-					<a href="index.html"
-					   alt="버튼 뒤로가기"
-					><img src="./assets/images/icon/arrow_left.png" alt="" /></a>
-				</div>
-				<div class="lnb">
-					<a href="introduce_eroom.html"
-					   alt="버튼 이룸센터 소개 메뉴"
-					>이룸센터 소개</a>
-				</div>
-				<div class="lnb">
-					<a href="introduce_room.html"
-					   alt="버튼 대관실 소개 메뉴"
-					>대관실 소개</a>
-				</div>
-				<div class="lnb">
-					<a href="introduce_convenience.html"
-					   alt="버튼 편의시설 소개 메뉴"
-					>편의시설 안내</a>
-				</div>
-			</nav>
-		</section>
-
-		<section class="control_box">
-			<div class="zoom_box">
-				<button type="button"
-				        onclick="zoomIn()"
-				        alt="버튼 화면 확대"
-				>
-					<img src="./assets/images/icon/magnifier-plus.png" alt="" />
-				</button>
-				<button type="button"
-				        onclick="zoomOut()"
-				        alt="버튼 화면 축소"
-				>
-					<img src="./assets/images/icon/magnifier-minus.png" alt="" />
-				</button>
-			</div>
-			<button type="button"
-			        class="control_btn control_text"
-			        alt="버튼 글자 크기 확대 축소"
-			>
-				<img src="./assets/images/icon/text.png" alt="" />
-			</button>
-			<button type="button"
-			        class="control_btn"
-			        onclick="location.href='index.html'"
-			        alt="버튼 홈"
-			>
-				<img src="./assets/images/icon/home.png" alt="" />
-			</button>
-		</section>
-
 	</main>
 	<section class="side_box" aria-label="현재 날씨 및 대관일정을 확인할 수 있습니다.">
 		<article class="weather_wrap">
@@ -229,14 +234,14 @@
 	<div class="popup_wrap rental_detail_popup" data-popup="schedule_detail">
 	<div class="popup_box">
 		<div class="popup_box__header">
-			<h2 alt="대관일정안내" tabindex="1">대관 일정 안내</h2>
+			<h2 alt="대관일정안내" >대관 일정 안내</h2>
 		</div>
 		<div class="popup_box__container card_box">
 			<div class="rental_detail_list">
 				<div class="card_slider">
 					<div class="card"
 					     alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3"
-					     tabindex="2"
+
 					>
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회</p>
@@ -265,7 +270,7 @@
 	</div>
 </div>
 
-	<div class="popup_wrap type_loding">
+	<div class="popup_wrap type_loding" data-popup="dialog_loding">
 		<div class="popup_box">
 			<div class="popup_box__container">
 				<div class="loding_lottie">
@@ -277,12 +282,14 @@
 					               autoplay
 					></lottie-player>
 				</div>
-				<p>디바이스 연결중 ...</p>
+				<p alt="디바이스 연결중 ..."
+				   tabindex="1"
+				>디바이스 연결중 ...</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="popup_wrap type_alert active" data-popup="alert_btn">
+	<div class="popup_wrap type_alert" data-popup="dialog_alert">
 		<div class="popup_box">
 			<div class="popup_box__container">
 				<p alt="alert text" tabindex="1">alert line 1</p>
@@ -290,52 +297,16 @@
 			<div class="popup_box__footer">
 				<button type="button"
 				        class="btn btn_outline"
-				        data-popup-close="alert_btn"
+				        data-popup-close="dialog_alert"
 				        alt="버튼 닫기"
 				        tabindex="2"
 				>닫기</button>
 				<button type="button"
 				        class="btn btn_fill"
-				        data-popup-close="alert_btn"
+				        data-popup-close="dialog_alert"
 				        alt="버튼 확인"
 				        tabindex="3"
 				>확인</button>
-			</div>
-		</div>
-	</div>
-
-	<div id="popup_floor" class="popup_wrap type_alert active" data-popup="popup_floor">
-		<div class="popup_box">
-			<div class="popup_box__container">
-				<div class="company_wrap">
-					<div class="company_logo"><img src="./assets/images/logos/floor_info_02.png" alt=""></div>
-					<div class="company_name" alt="(사)한국장애인단체총연맹" tabindex="1">(사)한국장애인단체총연맹</div>
-					<div class="company_info" alt="위치 : 401호, 전화 : 02-796-4280" tabindex="2">위치 : 401호<br/>전화 : 02-796-4280</div>
-				</div>
-			</div>
-			<div class="popup_box__footer">
-				<div>
-					<button type="button"
-					        class="btn btn_outline"
-					        data-popup-close="popup_floor"
-					        alt="버튼 닫기"
-					        tabindex="3"
-					>닫기</button>
-				</div>
-				<div>
-					<button type="button"
-					        class="btn btn_fill"
-					        data-popup-close="popup_floor"
-					        alt="버튼 전체경로"
-					        tabindex="3"
-					>전체경로</button>
-					<button type="button"
-					        class="btn btn_fill"
-					        data-popup-close="popup_floor"
-					        alt="버튼 3D 길안내"
-					        tabindex="4"
-					>3D 길안내</button>
-				</div>
 			</div>
 		</div>
 	</div>

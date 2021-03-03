@@ -83,7 +83,7 @@ $(function() {
 	$('[data-popup-open]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-open');
 
-		$('[data-popup="' + targeted_popup_class + '"]').addClass('active');
+		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(600).addClass('active');
 		$('.card_slider').slick('refresh');
 		$('.room_view').slick('refresh');
 		$('.rooms').slick('refresh');
@@ -95,7 +95,7 @@ $(function() {
 	$('[data-popup-close]').on('click', function(e)  {
 		var targeted_popup_class = $(this).attr('data-popup-close');
 
-		$('[data-popup="' + targeted_popup_class + '"]').removeClass('active');
+		$('[data-popup="' + targeted_popup_class + '"]').fadeOut('fast').removeClass('active');
 		$('.zoom_box').removeClass('box');
 		$('.control_btn').removeClass('box');
 
@@ -164,14 +164,18 @@ $(function() {
 
 function textToSpeech( text ) {
 	var utterThis = new SpeechSynthesisUtterance( text );
+
+	window.speechSynthesis.cancel();
+
 	utterThis.onend = function (event) {
 		console.log('SpeechSynthesisUtterance.onend');
 	}
 	utterThis.onerror = function (event) {
 		console.error('SpeechSynthesisUtterance.onerror');
 	}
+
 	utterThis.lang = 'ko-KR';
 	utterThis.pitch = 1;
-	utterThis.rate = 1;
+	utterThis.rate = 1.5;
 	synth.speak(utterThis);
 }
