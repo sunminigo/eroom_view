@@ -176,6 +176,6 @@ function textToSpeech( text ) {
 
 	utterThis.lang = 'ko-KR';
 	utterThis.pitch = 1;
-	utterThis.rate = 1.5;
+	utterThis.rate = 1;
 	synth.speak(utterThis);
 }
