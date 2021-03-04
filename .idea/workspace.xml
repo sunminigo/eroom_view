@@ -3,8 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="680e0857-e231-4636-b2c2-81f203150b13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/script/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/script/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_10.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_B1.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_B1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/floor_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/floor_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introduce_convenience.html" beforeDir="false" afterPath="$PROJECT_DIR$/introduce_convenience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/introduce_eroom.html" beforeDir="false" afterPath="$PROJECT_DIR$/introduce_eroom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/introduce_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/introduce_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental_information.html" beforeDir="false" afterPath="$PROJECT_DIR$/rental_information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic_bus.html" beforeDir="false" afterPath="$PROJECT_DIR$/traffic_bus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/traffic_map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic_subway.html" beforeDir="false" afterPath="$PROJECT_DIR$/traffic_subway.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +61,7 @@
       <recent name="C:\Users\sunmi\Documents\Github\eroom\dist" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -56,11 +75,12 @@
       <workItem from="1614781070109" duration="1045000" />
       <workItem from="1614782134228" duration="2577000" />
       <workItem from="1614820773072" duration="1660000" />
+      <workItem from="1614874945316" duration="854000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
