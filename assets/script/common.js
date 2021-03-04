@@ -7,8 +7,8 @@ $(function() {
 		autoplaySpeed: 5000,
 		arrows: true,
 		dots: true,
-		prevArrow: '<button type="button" class="prev" alt="버튼 이전"><img src="./assets/images/icon/arrow_angle_left.png" alt=""></button>',
-		nextArrow: '<button type="button" class="next" alt="버튼 다음"><img src="./assets/images/icon/arrow_angle_right.png" alt=""></button>',
+		prevArrow: '<button type="button" class="prev"><img src="./assets/images/icon/arrow_angle_left.png" alt=""></button>',
+		nextArrow: '<button type="button" class="next"><img src="./assets/images/icon/arrow_angle_right.png" alt=""></button>',
 	});
 	$('.card_slider').slick({
 		rows: 2,
@@ -88,7 +88,7 @@ $(function() {
 		$('.room_view').slick('refresh');
 		$('.rooms').slick('refresh');
 		$('.zoom_box').addClass('box');
-		$('.control_btn').addClass('box');
+		$('.btn_one').addClass('box');
 
 		e.preventDefault();
 	});
@@ -97,7 +97,7 @@ $(function() {
 
 		$('[data-popup="' + targeted_popup_class + '"]').fadeOut('fast').removeClass('active');
 		$('.zoom_box').removeClass('box');
-		$('.control_btn').removeClass('box');
+		$('.btn_one').removeClass('box');
 
 		e.preventDefault();
 	});
@@ -105,7 +105,7 @@ $(function() {
 	/****************************************
 	 * TEXT SIZE
 	 *****************************************/
-	$('.control_text').on('click', function () {
+	$('#control_text').on('click', function () {
 		$('html, body').toggleClass('controlFontSize');
 	});
 

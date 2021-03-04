@@ -44,33 +44,22 @@
 	<main class="container_wrap">
 		<section class="control_box">
 			<div class="zoom_box">
-				<button type="button"
-				        onclick="zoomIn()"
-				        alt="버튼 화면 확대"
-				>
-					<img src="./assets/images/icon/magnifier-plus.png" alt="" />
-				</button>
-				<button type="button"
-				        onclick="zoomOut()"
-				        alt="버튼 화면 축소"
-				>
-					<img src="./assets/images/icon/magnifier-minus.png" alt="" />
-				</button>
+				<span class="btn_control"
+				      onclick="zoomIn()"
+				><img src="./assets/images/icon/magnifier-plus.png" alt="" /></span>
+				<span class="btn_control"
+				      onclick="zoomOut()"
+				><img src="./assets/images/icon/magnifier-minus.png" alt="" /></span>
 			</div>
+			<span id="control_text"
+			      class="btn_control btn_one"
+			><img src="./assets/images/icon/text.png" alt="" /></span>
 			<button type="button"
-			        class="control_btn control_text"
-			        alt="버튼 글자 크기 확대 축소"
-			>
-				<img src="./assets/images/icon/text.png" alt="" />
-			</button>
-			<button type="button"
-			        class="control_btn"
+			        class="btn_control btn_one"
 			        onclick="location.href='index.html'"
 			        alt="버튼 홈"
 			        tabindex="1"
-			>
-				<img src="./assets/images/icon/home.png" alt="" />
-			</button>
+			><img src="./assets/images/icon/home.png" alt="" /></button>
 		</section>
 
 		<section class="navigation_box">
@@ -114,7 +103,7 @@
 
 
 		<header>
-			<h1 alt="오늘의대관안내 2021년2월18일" ><img src="./assets/images/logo_symbol.svg" alt="eroom simbol" />오늘의 대관 안내 - 2021년 2월 18일</h1>
+			<h1 alt="오늘의대관안내 2021년2월18일" tabindex="8"><img src="./assets/images/logo_symbol.svg" alt="eroom simbol" />오늘의 대관 안내 - 2021년 2월 18일</h1>
 		</header>
 
 		<section class="content_box rental_page card_box" aria-label="대관 안내">
@@ -122,7 +111,7 @@
 				<div class="card_slider">
 					<div class="card"
 					     alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 시간:14시 ~ 16시, 장소:회의실 3"
-
+					     tabindex="9"
 					>
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회 한국 지적 발달 장애인 협회한국 지적 발달 장애인 협회</p>
@@ -143,7 +132,10 @@
 		</section>
 	</main>
 	<section class="side_box" aria-label="현재 날씨 및 대관일정을 확인할 수 있습니다.">
-		<article class="weather_wrap">
+		<article class="weather_wrap"
+		         alt="2021년 01년 22일 오후 2:53 맑음 서울 영등포구 -5℃"
+		         tabindex=""
+		>
 			<div class="today_info">
 				<p class="today_info__date">2021년 01년 22일</p>
 				<p class="today_info__time">2:53 PM</p>
@@ -160,11 +152,9 @@
 		</article>
 
 		<article class="info_wrap">
-			<h2 class="title" alt="오늘의 대관현황">오늘의 대관현황</h2>
+			<h2 class="title">오늘의 대관현황</h2>
 			<ul class="info_list">
-				<li class="randomColor"
-				    alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 시간:14시 ~ 16시, 장소:회의실 3"
-				>
+				<li class="randomColor">
 					<div class="content_box">
 						<h3 class="content_box__title">이사회</h3>
 						<p class="content_box__txt">한국 지적 발달 장애인 협회</p>
@@ -181,6 +171,7 @@
 			        class="btn_more"
 			        data-popup-open="schedule_detail"
 			        alt="버튼 일정 전체보기 메뉴"
+			        tabindex=""
 			><img src="./assets/images/icon/calender.png" alt="">일정 전체 보기</button>
 		</article>
 	</section>
@@ -189,14 +180,14 @@
 	<div class="popup_wrap rental_detail_popup" data-popup="schedule_detail">
 	<div class="popup_box">
 		<div class="popup_box__header">
-			<h2 alt="대관일정안내" >대관 일정 안내</h2>
+			<h2 alt="대관 일정 안내" tabindex="2">대관 일정 안내</h2>
 		</div>
 		<div class="popup_box__container card_box">
 			<div class="rental_detail_list">
 				<div class="card_slider">
 					<div class="card"
 					     alt="행사명: 이사회, 단체명: 한국 지적 발달 장애인 협회, 행사시간 14시 부터 16시, 장소 회의실3"
-
+					     tabindex="3"
 					>
 						<h3>이사회</h3>
 						<p class="intro">한국 지적 발달 장애인 협회</p>
@@ -219,7 +210,7 @@
 			<button type="button"
 			        class="btn btn_fill"
 			        data-popup-close="schedule_detail"
-			        alt="버튼 닫기"
+			        alt="버튼 팝업 닫기"
 			>닫기</button>
 		</div>
 	</div>
