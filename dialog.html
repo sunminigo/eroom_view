@@ -114,8 +114,8 @@
 		<div class="popup_box">
 			<div class="popup_box__container">
 				<div class="loding_lottie">
-					<lottie-player src="./assets/images/loding.json"
-					               class="lottie"
+					<lottie-player data-original="./assets/images/loding.json"
+					               class="lottie lazy"
 					               background="transparent"
 					               speed="1"
 					               loop
@@ -158,6 +158,8 @@
 	<script type="text/javascript" src="./assets/script/common.js"></script>
 	<!-- lottie	-->
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<!-- lazyload	-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 </body>
 </html>
 
@@ -184,7 +186,7 @@
 	<div class="popup_box">
 		<div class="popup_box__container">
 			<div class="company_wrap" alt="한국장애인단체총연맹 위치 : 401호, 전화 : 02-796-4280" tabindex="1">
-				<div class="company_logo"><img src="./assets/images/logos/floor_info_02.png" alt=""></div>
+				<div class="company_logo"><img class="lazy" data-original="./assets/images/logos/floor_info_02.png" alt=""></div>
 				<div class="company_name">(사)한국장애인단체총연맹</div>
 				<div class="company_info">위치 : 401호<br/>전화 : 02-796-4280</div>
 			</div>

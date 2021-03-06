@@ -1,8 +1,14 @@
 $(function() {
 	/****************************************
+	 * LAZYLODING
+	 *****************************************/
+	$("img").lazyload({ threshold : 200 });
+
+	/****************************************
 	 * SLIDER
 	 *****************************************/
 	$('#visual_slider').slick({
+		lazyLoad: 'ondemand',
 		autoplay: true,
 		autoplaySpeed: 5000,
 		arrows: true,
@@ -11,6 +17,7 @@ $(function() {
 		nextArrow: '<button type="button" class="next"><img src="./assets/images/icon/arrow_angle_right.png" alt="다음"></button>',
 	});
 	$('.card_slider').slick({
+		lazyLoad: 'ondemand',
 		rows: 2,
 		autoplay: false,
 		slidesToShow: 3,
@@ -22,12 +29,14 @@ $(function() {
 		nextArrow: '<button type="button" class="next" alt="버튼 다음"><img src="./assets/images/icon/arrow_angle_right.png" alt="다음"></button>',
 	});
 	$('.room_view').slick({
+		lazyLoad: 'ondemand',
 		autoplay: false,
 		slidesToShow: 1,
 		arrows: false,
 		asNavFor: '.rooms'
 	});
 	$('.rooms').slick({
+		lazyLoad: 'ondemand',
 		slidesToShow: 5,
 		arrows: false,
 		focusOnSelect: true,
