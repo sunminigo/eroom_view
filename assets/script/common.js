@@ -132,6 +132,19 @@ $(function() {
 	}
 	 *****************************************/
 
+	/****************************************
+	 * FLOOR BUTTON
+	 *****************************************/
+	$('.btn_box .close').hide();
+	$('.btn_box .next').show();
+	$('.btn_box .next').click(function(){
+		$('.close').show();
+		$(this).hide();
+	});
+	$('.btn_box .close').click(function(){
+		$('.next').show();
+		$(this).hide();
+	});
 });
 
 /****************************************
