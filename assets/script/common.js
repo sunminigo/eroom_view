@@ -18,8 +18,8 @@ $(function() {
 	});
 	$('.card_slider').slick({
 		lazyLoad: 'ondemand',
-		rows: 2,
 		autoplay: false,
+		rows: 2,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		autoplaySpeed: 5000,
