@@ -1709,6 +1709,7 @@ header h1.logo_box img {
 
 /* line 18, workspace/assets/style/pages/_navigation.scss */
 .navigation_box .gnb_box > .gnb {
+	position: relative;
 	height: 100%;
 }
 
@@ -1729,7 +1730,7 @@ header h1.logo_box img {
 }
 
 /* line 32, workspace/assets/style/pages/_navigation.scss */
-.navigation_box .gnb_box > .gnb > button:before {
+.navigation_box .gnb_box > .gnb + .gnb:before {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -1744,10 +1745,13 @@ header h1.logo_box img {
 	background: #C4C4C4;
 }
 
-/* line 43, workspace/assets/style/pages/_navigation.scss */
-.navigation_box .gnb_box > .gnb:first-child button:before {
-	display: none;
+.navigation_box .gnb_box > .gnb.active:focus:before {
+	z-index: -1;
 }
+.navigation_box .gnb_box > .gnb.active + .gnb:before {
+	z-index: -1;
+}
+
 
 /* line 50, workspace/assets/style/pages/_navigation.scss */
 .lnb_box {
@@ -1797,6 +1801,13 @@ header h1.logo_box img {
 .lnb_box > .lnb.active {
 	background: #FDC400;
 	border-radius: 8px;
+}
+
+.lnb_box > .lnb.active:before {
+	z-index: -1 !important;
+}
+.lnb_box > .lnb.active + .lnb:before {
+	z-index: -1;
 }
 
 /* line 77, workspace/assets/style/pages/_navigation.scss */
