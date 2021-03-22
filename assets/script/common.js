@@ -227,7 +227,7 @@ function textToSpeech( text ) {
 function changeIframeUrl(url) {
 	var getIframe = document.getElementById('iframe_content');
 			getIframe.src = 'iframe/'+url+'.html';
-			
+	
 	if (getIframe.src.indexOf(url) != -1) {
 		let text = url.split('_')[0]
 		
